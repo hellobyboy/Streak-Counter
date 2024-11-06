@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>=Streak Counter</title>
+  <title>Streak Counter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="streak-container">
-    <h1>40 Days Streak</h1>
-    <div id="streak">0🔥</div>
-    <button onclick="incrementStreak()">+</button>
-    <button onclick="decrementStreak()">-</button>
-    <button onclick="resetStreak()">Reset</button>
+  <div class="container">
+    <h1>Task Streak Counter</h1>
+    <div class="task-input">
+      <input type="text" id="task-input" placeholder="Enter a new task" />
+      <button onclick="addNewTask()">Add Task</button>
+    </div>
+    <div id="task-list" class="task-list">
+      <!-- Task elements will be appended here by JavaScript -->
+    </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
